@@ -11,6 +11,10 @@ app.get('/',(req,res) => {
     })
 });
 
+app.get('/karo', (req, res) => {
+    res.send('I am getting there');
+});
+
 app.listen(port, () => {
     console.log(`Sever is active on ${port}`);
 });
